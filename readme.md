@@ -1,3 +1,17 @@
+About the Application
+====
+City-manager is a simple rest service written in python which allows below functionalities:
+
+    1. Add a few sample cities in the database if there is no city in database on startup of application.
+    2. Expose an api to get all the cities and their population
+    3. Expose an api to add a new city or update any existing city 
+    4. Expose an api to get the population of any city
+    4. Expose an api to get the health of the service which returns 'OK'
+
+Perform below steps in order to run this application:
+====
+
+
 Install Docker as Runtime 
 =====
 https://docs.docker.com/get-docker/
@@ -26,11 +40,11 @@ Install Helm 3
 Install Elasticsearch Cluster
 =====
     helm repo add elastic https://helm.elastic.co
-    helm3 install elasticsearch elastic/elasticsearch -f ElasticSearch/values.yaml
+    helm install elasticsearch elastic/elasticsearch -f ElasticSearch/values.yaml
 
 Install City-Manager 
 =====
-    helm3 upgrade city-manager Helm/city-manager --install
+    helm upgrade city-manager Helm/city-manager --install
 
 To Access the city-manager apis
 =====
