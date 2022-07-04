@@ -1,0 +1,4 @@
+flask
+flask-jsonpify
+flask-restful
+elasticsearch >= v8.2.3
