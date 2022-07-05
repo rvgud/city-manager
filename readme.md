@@ -71,3 +71,9 @@ Population API(To get population of any city)
 =====
     http://<minikube_ip>:<node_port>/population/<city_id>
 
+Metric API
+====
+    http://<minikube_ip>:<node_port>/metric/
+    Metric Name= city_population_fetch_total
+    type= counter
+    description= Number of times population api got called.
